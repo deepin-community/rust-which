@@ -4,13 +4,25 @@ Upstream-Contact: Harry Fei <tiziyuanfang@gmail.com>
 Source: https://github.com/harryfei/which-rs.git
 
 Files: *
-Copyright: 2015-2018 Harry Fei <tiziyuanfang@gmail.com>
+Copyright: FIXME (overlay) UNKNOWN-YEARS Harry Fei <tiziyuanfang@gmail.com>
 License: MIT
+Comment:
+ FIXME (overlay): Since upstream copyright years are not available in
+ Cargo.toml, they were extracted from the upstream Git repository. This may not
+ be correct information so you should review and fix this before uploading to
+ the archive.
+
+Files: ./LICENSE.txt
+Copyright: 2015 fangyuanziti
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
 
 Files: debian/*
 Copyright:
- 2018 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2018 Ximin Luo <infinity0@debian.org>
+ 2018-2022 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2018-2022 Ximin Luo <infinity0@debian.org>
 License: MIT
 
 License: MIT

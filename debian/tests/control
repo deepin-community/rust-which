@@ -1,0 +1,19 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test which 4.2.5 --all-targets --all-features
+Features: test-name=rust-which:@
+Depends: dh-cargo (>= 18), librust-tempfile-3+default-dev (>= 3.3.0-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test which 4.2.5 --all-targets 
+Features: test-name=librust-which-dev:default
+Depends: dh-cargo (>= 18), librust-tempfile-3+default-dev (>= 3.3.0-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test which 4.2.5 --all-targets --no-default-features
+Features: test-name=librust-which-dev:
+Depends: dh-cargo (>= 18), librust-tempfile-3+default-dev (>= 3.3.0-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test which 4.2.5 --all-targets --no-default-features --features regex
+Features: test-name=librust-which+regex-dev:regex
+Depends: dh-cargo (>= 18), librust-tempfile-3+default-dev (>= 3.3.0-~~), @
+Restrictions: allow-stderr, skip-not-installable
